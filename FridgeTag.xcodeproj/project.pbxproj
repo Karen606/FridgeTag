@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1B19DA2CEDFE5400E7328A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19CF2CEDFE5400E7328A /* Assets.xcassets */; };
+		6B1B19DC2CEDFE5400E7328A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19D32CEDFE5400E7328A /* LaunchScreen.storyboard */; };
+		6B1B19DD2CEDFE5400E7328A /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19D52CEDFE5400E7328A /* Root.storyboard */; };
+		6B1B19DE2CEDFE5400E7328A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19CE2CEDFE5400E7328A /* AppDelegate.swift */; };
+		6B1B19DF2CEDFE5400E7328A /* FridgeTag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19D02CEDFE5400E7328A /* FridgeTag.xcdatamodeld */; };
+		6B1B19E02CEDFE5400E7328A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19D62CEDFE5400E7328A /* SceneDelegate.swift */; };
+		6B1B19E12CEDFE5400E7328A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19D72CEDFE5400E7328A /* RootViewController.swift */; };
+		6B1B19E72CEE18E800E7328A /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19E62CEE18E800E7328A /* MenuViewController.xib */; };
+		6B1B19E82CEE18E800E7328A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19E52CEE18E800E7328A /* MenuViewController.swift */; };
+		6B1B19EE2CEE197E00E7328A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19ED2CEE197E00E7328A /* Montserrat-SemiBold.ttf */; };
+		6B1B19EF2CEE197E00E7328A /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19EC2CEE197E00E7328A /* Montserrat-ExtraBold.ttf */; };
+		6B1B19F02CEE197E00E7328A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B19EB2CEE197E00E7328A /* Montserrat-Bold.ttf */; };
+		6B1B19F22CEE19C000E7328A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F12CEE19C000E7328A /* Font.swift */; };
+		6B1B19F92CEE1A6D00E7328A /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F42CEE1A6D00E7328A /* PaddingTextField.swift */; };
+		6B1B19FA2CEE1A6D00E7328A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F82CEE1A6D00E7328A /* ViewController.swift */; };
+		6B1B19FB2CEE1A6D00E7328A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F72CEE1A6D00E7328A /* UIView.swift */; };
+		6B1B19FC2CEE1A6D00E7328A /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F32CEE1A6D00E7328A /* BaseButton.swift */; };
+		6B1B19FD2CEE1A6D00E7328A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F52CEE1A6D00E7328A /* String.swift */; };
+		6B1B19FE2CEE1A6D00E7328A /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B19F62CEE1A6D00E7328A /* UITextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B1B19B32CEDFE4B00E7328A /* FridgeTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1B19CE2CEDFE5400E7328A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B1B19CF2CEDFE5400E7328A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B1B19D12CEDFE5400E7328A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1B19D22CEDFE5400E7328A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B1B19D42CEDFE5400E7328A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Root.storyboard; sourceTree = "<group>"; };
+		6B1B19D62CEDFE5400E7328A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6B1B19D72CEDFE5400E7328A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6B1B19D92CEDFE5400E7328A /* FridgeTag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FridgeTag.xcdatamodel; sourceTree = "<group>"; };
+		6B1B19E52CEE18E800E7328A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6B1B19E62CEE18E800E7328A /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		6B1B19EB2CEE197E00E7328A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		6B1B19EC2CEE197E00E7328A /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		6B1B19ED2CEE197E00E7328A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		6B1B19F12CEE19C000E7328A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		6B1B19F32CEE1A6D00E7328A /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		6B1B19F42CEE1A6D00E7328A /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		6B1B19F52CEE1A6D00E7328A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6B1B19F62CEE1A6D00E7328A /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		6B1B19F72CEE1A6D00E7328A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6B1B19F82CEE1A6D00E7328A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B1B19B02CEDFE4B00E7328A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B1B19AA2CEDFE4B00E7328A = {
+			isa = PBXGroup;
+			children = (
+				6B1B19D82CEDFE5400E7328A /* FridgeTag */,
+				6B1B19B42CEDFE4B00E7328A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1B19B42CEDFE4B00E7328A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19B32CEDFE4B00E7328A /* FridgeTag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1B19D82CEDFE5400E7328A /* FridgeTag */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19E92CEE192700E7328A /* Extensions */,
+				6B1B19E32CEE016E00E7328A /* Menu */,
+				6B1B19E22CEDFF6600E7328A /* Root */,
+				6B1B19CE2CEDFE5400E7328A /* AppDelegate.swift */,
+				6B1B19CF2CEDFE5400E7328A /* Assets.xcassets */,
+				6B1B19D02CEDFE5400E7328A /* FridgeTag.xcdatamodeld */,
+				6B1B19D12CEDFE5400E7328A /* Info.plist */,
+				6B1B19D32CEDFE5400E7328A /* LaunchScreen.storyboard */,
+				6B1B19D62CEDFE5400E7328A /* SceneDelegate.swift */,
+			);
+			path = FridgeTag;
+			sourceTree = "<group>";
+		};
+		6B1B19E22CEDFF6600E7328A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19D72CEDFE5400E7328A /* RootViewController.swift */,
+				6B1B19D52CEDFE5400E7328A /* Root.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6B1B19E32CEE016E00E7328A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19E42CEE041000E7328A /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		6B1B19E42CEE041000E7328A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19E52CEE18E800E7328A /* MenuViewController.swift */,
+				6B1B19E62CEE18E800E7328A /* MenuViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B1B19E92CEE192700E7328A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19F32CEE1A6D00E7328A /* BaseButton.swift */,
+				6B1B19F42CEE1A6D00E7328A /* PaddingTextField.swift */,
+				6B1B19F52CEE1A6D00E7328A /* String.swift */,
+				6B1B19F62CEE1A6D00E7328A /* UITextField.swift */,
+				6B1B19F72CEE1A6D00E7328A /* UIView.swift */,
+				6B1B19F82CEE1A6D00E7328A /* ViewController.swift */,
+				6B1B19EA2CEE192D00E7328A /* Font */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B1B19EA2CEE192D00E7328A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B19EB2CEE197E00E7328A /* Montserrat-Bold.ttf */,
+				6B1B19EC2CEE197E00E7328A /* Montserrat-ExtraBold.ttf */,
+				6B1B19ED2CEE197E00E7328A /* Montserrat-SemiBold.ttf */,
+				6B1B19F12CEE19C000E7328A /* Font.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B1B19B22CEDFE4B00E7328A /* FridgeTag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1B19C92CEDFE4C00E7328A /* Build configuration list for PBXNativeTarget "FridgeTag" */;
+			buildPhases = (
+				6B1B19AF2CEDFE4B00E7328A /* Sources */,
+				6B1B19B02CEDFE4B00E7328A /* Frameworks */,
+				6B1B19B12CEDFE4B00E7328A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FridgeTag;
+			packageProductDependencies = (
+			);
+			productName = FridgeTag;
+			productReference = 6B1B19B32CEDFE4B00E7328A /* FridgeTag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B1B19AB2CEDFE4B00E7328A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					6B1B19B22CEDFE4B00E7328A = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B1B19AE2CEDFE4B00E7328A /* Build configuration list for PBXProject "FridgeTag" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B1B19AA2CEDFE4B00E7328A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6B1B19B42CEDFE4B00E7328A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B1B19B22CEDFE4B00E7328A /* FridgeTag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B1B19B12CEDFE4B00E7328A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B19DA2CEDFE5400E7328A /* Assets.xcassets in Resources */,
+				6B1B19DC2CEDFE5400E7328A /* LaunchScreen.storyboard in Resources */,
+				6B1B19DD2CEDFE5400E7328A /* Root.storyboard in Resources */,
+				6B1B19EE2CEE197E00E7328A /* Montserrat-SemiBold.ttf in Resources */,
+				6B1B19EF2CEE197E00E7328A /* Montserrat-ExtraBold.ttf in Resources */,
+				6B1B19F02CEE197E00E7328A /* Montserrat-Bold.ttf in Resources */,
+				6B1B19E72CEE18E800E7328A /* MenuViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B1B19AF2CEDFE4B00E7328A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B19DE2CEDFE5400E7328A /* AppDelegate.swift in Sources */,
+				6B1B19E82CEE18E800E7328A /* MenuViewController.swift in Sources */,
+				6B1B19F22CEE19C000E7328A /* Font.swift in Sources */,
+				6B1B19F92CEE1A6D00E7328A /* PaddingTextField.swift in Sources */,
+				6B1B19FA2CEE1A6D00E7328A /* ViewController.swift in Sources */,
+				6B1B19FB2CEE1A6D00E7328A /* UIView.swift in Sources */,
+				6B1B19FC2CEE1A6D00E7328A /* BaseButton.swift in Sources */,
+				6B1B19FD2CEE1A6D00E7328A /* String.swift in Sources */,
+				6B1B19FE2CEE1A6D00E7328A /* UITextField.swift in Sources */,
+				6B1B19DF2CEDFE5400E7328A /* FridgeTag.xcdatamodeld in Sources */,
+				6B1B19E02CEDFE5400E7328A /* SceneDelegate.swift in Sources */,
+				6B1B19E12CEDFE5400E7328A /* RootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B1B19D32CEDFE5400E7328A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B19D22CEDFE5400E7328A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1B19D52CEDFE5400E7328A /* Root.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B19D42CEDFE5400E7328A /* Base */,
+			);
+			name = Root.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1B19CA2CEDFE4C00E7328A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YUSQBCAX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FridgeTag/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Root;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Karen.FridgeTag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B1B19CB2CEDFE4C00E7328A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YUSQBCAX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FridgeTag/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Root;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Karen.FridgeTag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6B1B19CC2CEDFE4C00E7328A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B1B19CD2CEDFE4C00E7328A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B1B19AE2CEDFE4B00E7328A /* Build configuration list for PBXProject "FridgeTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B19CC2CEDFE4C00E7328A /* Debug */,
+				6B1B19CD2CEDFE4C00E7328A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1B19C92CEDFE4C00E7328A /* Build configuration list for PBXNativeTarget "FridgeTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B19CA2CEDFE4C00E7328A /* Debug */,
+				6B1B19CB2CEDFE4C00E7328A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B1B19D02CEDFE5400E7328A /* FridgeTag.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B1B19D92CEDFE5400E7328A /* FridgeTag.xcdatamodel */,
+			);
+			currentVersion = 6B1B19D92CEDFE5400E7328A /* FridgeTag.xcdatamodel */;
+			path = FridgeTag.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B1B19AB2CEDFE4B00E7328A /* Project object */;
+}
