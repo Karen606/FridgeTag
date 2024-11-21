@@ -66,7 +66,8 @@ class ProductFormViewController: UIViewController {
         photoButton.layer.borderColor = UIColor.border.cgColor
         photoButton.layer.cornerRadius = 16
         photoButton.layer.masksToBounds = true
-        photoButton.imageView?.contentMode = .scaleAspectFill
+        photoButton.imageView?.contentMode = .scaleAspectFit
+        
         cancelButton.titleLabel?.font = .extraBold(size: 21)
         saveButton.titleLabel?.font = .extraBold(size: 21)
         addedDatePicker.locale = NSLocale.current
@@ -170,10 +171,10 @@ class ProductFormViewController: UIViewController {
             if let error = error {
                 self.showErrorAlert(message: error.localizedDescription)
             } else {
-                if let date = viewModel.product.dateExpiry {
+                if let date = viewModel.product.dateExpiry, let id = viewModel.product.id?.uuidString {
                     let title = "Expiration date"
                     let body = "The expiration date of the product \(viewModel.product.name ?? "") is today"
-                    NotificationManager.shared.scheduleNotification(for: date, title: title, body: body)
+                    NotificationManager.shared.scheduleNotification(identifier: id, for: date, title: title, body: body)
                 }
                 self.navigationController?.popViewController(animated: true)
             }

@@ -42,6 +42,7 @@ class MenuViewModel {
     func removeProduct(id: UUID) {
         CoreDataManager.shared.removeProduct(by: id) { [weak self] _ in
             guard let self = self else { return }
+            NotificationManager.shared.deleteNotification(with: id.uuidString)
             self.fetchData()
         }
     }

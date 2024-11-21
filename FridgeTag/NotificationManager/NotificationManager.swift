@@ -60,7 +60,7 @@ class NotificationManager {
             }
     }
 
-    func scheduleNotification(for date: Date, title: String, body: String) {
+    func scheduleNotification(identifier: String, for date: Date, title: String, body: String) {
         guard self.isNotificationEnabled() else { return }
         let content = UNMutableNotificationContent()
         content.title = title
@@ -78,6 +78,11 @@ class NotificationManager {
                 print("Notification scheduled for \(date)")
             }
         }
+    }
+    
+    func deleteNotification(with identifier: String) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [identifier])
+        print("Notification with identifier \(identifier) has been deleted.")
     }
     
     func isNotificationEnabled() -> Bool {
