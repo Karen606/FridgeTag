@@ -23,7 +23,7 @@ extension UIViewController {
         let backButton = UIButton(type: .custom)
         backButton.setImage(.settings, for: .normal)
         backButton.imageView?.contentMode = .center
-        backButton.addTarget(self, action: #selector(clickedBack), for: .touchUpInside)
+        backButton.addTarget(self, action: #selector(clickedSettings), for: .touchUpInside)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
     
@@ -31,8 +31,8 @@ extension UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
     
-    @objc func clickedBack() {
-        navigationController?.popViewController(animated: true)
+    @objc func clickedSettings() {
+        self.pushViewController(SettingsViewController.self)
     }
     
     @objc func handleTap() {

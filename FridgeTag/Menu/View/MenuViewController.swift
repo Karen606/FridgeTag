@@ -30,7 +30,7 @@ class MenuViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        mainCollectionView.collectionViewLayout.invalidateLayout()
+//        mainCollectionView.collectionViewLayout.invalidateLayout()
     }
     
     func setupUI() {
@@ -52,11 +52,11 @@ class MenuViewController: UIViewController {
     }
     
     func createSectionLayout(isEmpty: Bool) -> NSCollectionLayoutSection {
-        let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .absolute(125), heightDimension: .estimated(150)))
+        let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .absolute(133), heightDimension: .estimated(162)))
         item.edgeSpacing = NSCollectionLayoutEdgeSpacing.init(leading: .fixed(16), top: .fixed(0), trailing: .none, bottom: .none)
         let group = isEmpty
-            ? NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(0), heightDimension: .absolute(0)), subitems: [item])
-        : NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(view.frame.width), heightDimension: .estimated(150)), subitems: [item])
+        ? NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(1), heightDimension: .estimated(1)), subitems: [item])
+        : NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(view.frame.width), heightDimension: .estimated(162)), subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
         

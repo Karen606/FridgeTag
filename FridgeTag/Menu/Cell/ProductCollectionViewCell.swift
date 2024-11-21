@@ -23,6 +23,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .clear
         nameLabel.font = .extraBold(size: 21)
         datesLabel.font = .semibold(size: 13)
         photoImageView.contentMode = .scaleAspectFill

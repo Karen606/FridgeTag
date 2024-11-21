@@ -170,6 +170,11 @@ class ProductFormViewController: UIViewController {
             if let error = error {
                 self.showErrorAlert(message: error.localizedDescription)
             } else {
+                if let date = viewModel.product.dateExpiry {
+                    let title = "Expiration date"
+                    let body = "The expiration date of the product \(viewModel.product.name ?? "") is today"
+                    NotificationManager.shared.scheduleNotification(for: date, title: title, body: body)
+                }
                 self.navigationController?.popViewController(animated: true)
             }
         }

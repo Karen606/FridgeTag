@@ -39,6 +39,9 @@
 		6B1B1A1C2CEF454500E7328A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A1B2CEF454500E7328A /* ShadowView.swift */; };
 		6B1B1A262CEF537D00E7328A /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A252CEF537D00E7328A /* HeaderCollectionReusableView.xib */; };
 		6B1B1A272CEF537D00E7328A /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A242CEF537D00E7328A /* HeaderCollectionReusableView.swift */; };
+		6B1B1A2B2CEF96A800E7328A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A2A2CEF96A800E7328A /* SettingsViewController.xib */; };
+		6B1B1A2C2CEF96A800E7328A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A292CEF96A800E7328A /* SettingsViewController.swift */; };
+		6B1B1A2F2CEFACE500E7328A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A2E2CEFACE500E7328A /* NotificationManager.swift */; };
 		6ED10B071F9F670F30555914 /* Pods_FridgeTag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063BD69A2F8465859240BC46 /* Pods_FridgeTag.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		6B1B1A1B2CEF454500E7328A /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		6B1B1A242CEF537D00E7328A /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		6B1B1A252CEF537D00E7328A /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		6B1B1A292CEF96A800E7328A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6B1B1A2A2CEF96A800E7328A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6B1B1A2E2CEFACE500E7328A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		C389100125771E801425AE4E /* Pods-FridgeTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgeTag.release.xcconfig"; path = "Target Support Files/Pods-FridgeTag/Pods-FridgeTag.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +138,8 @@
 		6B1B19D82CEDFE5400E7328A /* FridgeTag */ = {
 			isa = PBXGroup;
 			children = (
+				6B1B1A2D2CEFACD700E7328A /* NotificationManager */,
+				6B1B1A282CEF969200E7328A /* Settings */,
 				6B1B1A082CEE6F6C00E7328A /* CoreData */,
 				6B1B19FF2CEE5FF700E7328A /* ProductForm */,
 				6B1B19E32CEE016E00E7328A /* Menu */,
@@ -281,6 +289,23 @@
 			path = HeaderView;
 			sourceTree = "<group>";
 		};
+		6B1B1A282CEF969200E7328A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B1A292CEF96A800E7328A /* SettingsViewController.swift */,
+				6B1B1A2A2CEF96A800E7328A /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6B1B1A2D2CEFACD700E7328A /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B1A2E2CEFACE500E7328A /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +369,7 @@
 			files = (
 				6B1B19DA2CEDFE5400E7328A /* Assets.xcassets in Resources */,
 				6B1B19DC2CEDFE5400E7328A /* LaunchScreen.storyboard in Resources */,
+				6B1B1A2B2CEF96A800E7328A /* SettingsViewController.xib in Resources */,
 				6B1B1A192CEF31F200E7328A /* ProductCollectionViewCell.xib in Resources */,
 				6B1B1A032CEE603600E7328A /* ProductFormViewController.xib in Resources */,
 				6B1B19DD2CEDFE5400E7328A /* Root.storyboard in Resources */,
@@ -410,6 +436,7 @@
 				6B1B19F22CEE19C000E7328A /* Font.swift in Sources */,
 				6B1B1A122CEF2D6700E7328A /* MenuViewModel.swift in Sources */,
 				6B1B1A272CEF537D00E7328A /* HeaderCollectionReusableView.swift in Sources */,
+				6B1B1A2F2CEFACE500E7328A /* NotificationManager.swift in Sources */,
 				6B1B1A0A2CEE6F8D00E7328A /* CoreDataManager.swift in Sources */,
 				6B1B1A1C2CEF454500E7328A /* ShadowView.swift in Sources */,
 				6B1B19F92CEE1A6D00E7328A /* PaddingTextField.swift in Sources */,
@@ -419,6 +446,7 @@
 				6B1B1A152CEF2DE700E7328A /* CategoryModel.swift in Sources */,
 				6B1B19FB2CEE1A6D00E7328A /* UIView.swift in Sources */,
 				6B1B19FC2CEE1A6D00E7328A /* BaseButton.swift in Sources */,
+				6B1B1A2C2CEF96A800E7328A /* SettingsViewController.swift in Sources */,
 				6B1B1A042CEE603600E7328A /* ProductFormViewController.swift in Sources */,
 				6B1B19FD2CEE1A6D00E7328A /* String.swift in Sources */,
 				6B1B1A072CEE6EE700E7328A /* ProductModel.swift in Sources */,
