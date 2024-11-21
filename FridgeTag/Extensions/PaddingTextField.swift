@@ -41,5 +41,15 @@ class PaddingTextField: UITextField {
         rightViewMode = .always
         self.padding.right = size.width
     }
+    
+    func setupDropDownIcon(_ imageView: UIImageView) {
+        imageView.contentMode = .center
+        let iconContainerView: UIView = UIView(frame:CGRect(x: 0, y: 0, width: imageView.frame.size.width, height: imageView.frame.size.height))
+        iconContainerView.isUserInteractionEnabled = false
+        iconContainerView.addSubview(imageView)
+        rightView = iconContainerView
+        rightViewMode = .always
+        self.padding.right = imageView.frame.size.width
+    }
 }
 

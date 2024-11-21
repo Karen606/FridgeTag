@@ -28,6 +28,6 @@ class MenuViewController: UIViewController {
     }
     
     @objc func clickedAdd() {
-        
+        self.pushViewController(ProductFormViewController.self)
     }
 }

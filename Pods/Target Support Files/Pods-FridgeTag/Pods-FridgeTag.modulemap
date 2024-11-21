@@ -1,0 +1,6 @@
+framework module Pods_FridgeTag {
+  umbrella header "Pods-FridgeTag-umbrella.h"
+
+  export *
+  module * { export * }
+}
