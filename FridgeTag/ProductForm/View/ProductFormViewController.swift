@@ -213,12 +213,12 @@ extension ProductFormViewController: UITextFieldDelegate {
 }
 
 enum Category: String, CaseIterable {
-    case Fruits = "Fruits"
-    case Vegetables = "Vegetables"
-    case MilkProducts = "Milk Products"
-    case AnimalProducts = "Animal Products"
-    case Drinks = "Drinks"
-    case Other = "Other"
+    case fruits = "Fruits"
+    case vegetables = "Vegetables"
+    case milkProducts = "Milk Products"
+    case animalProducts = "Animal Products"
+    case drinks = "Drinks"
+    case other = "Other"
 }
 
 extension ProductFormViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

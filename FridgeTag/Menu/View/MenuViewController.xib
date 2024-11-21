@@ -65,6 +65,7 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="background"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Kg-Ol-ZcA" secondAttribute="trailing" id="7ui-9p-lsu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4Kg-Ol-ZcA" secondAttribute="bottom" id="Ay7-YK-ode"/>
@@ -74,15 +75,23 @@
                 <constraint firstItem="Lg2-Rd-Tba" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="koU-gk-jdr"/>
                 <constraint firstItem="4Kg-Ol-ZcA" firstAttribute="top" secondItem="Lg2-Rd-Tba" secondAttribute="bottom" constant="20" id="o7Y-ap-CCJ"/>
             </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="2i3-9M-gZ6" appends="YES" id="bPM-pV-Tzp"/>
+            </connections>
             <point key="canvasLocation" x="46.564885496183201" y="20.422535211267608"/>
         </view>
+        <tapGestureRecognizer id="2i3-9M-gZ6">
+            <connections>
+                <action selector="handleTapGesture:" destination="-1" id="xUT-gs-YJk"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <namedColor name="background">
-            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="borderColor">
-            <color red="0.094117647058823528" green="0.098039215686274508" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.093999996781349182" green="0.097999997437000275" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

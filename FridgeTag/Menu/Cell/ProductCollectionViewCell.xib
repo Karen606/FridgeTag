@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="FridgeTag" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guN-yH-p6i" customClass="ShadowView">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-Lq-8ca">
+                                <rect key="frame" x="8" y="124" width="109" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.62352941176470589" green="0.64313725490196072" blue="0.70588235294117641" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlx-5A-sVd">
+                                <rect key="frame" x="8" y="93" width="109" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" name="baseBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uE5-dm-48X">
+                                <rect key="frame" x="32.666666666666664" y="8" width="59.999999999999993" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="63v-rg-wos"/>
+                                    <constraint firstAttribute="height" constant="60" id="z1Y-uz-Vdy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="product"/>
+                        <constraints>
+                            <constraint firstItem="1vA-Lq-8ca" firstAttribute="top" secondItem="wlx-5A-sVd" secondAttribute="bottom" constant="11" id="6Xo-jC-Zp0"/>
+                            <constraint firstItem="wlx-5A-sVd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uE5-dm-48X" secondAttribute="bottom" constant="8" id="DqV-0Y-ehA"/>
+                            <constraint firstItem="wlx-5A-sVd" firstAttribute="leading" secondItem="guN-yH-p6i" secondAttribute="leading" constant="8" id="FNc-QU-gOX"/>
+                            <constraint firstAttribute="trailing" secondItem="1vA-Lq-8ca" secondAttribute="trailing" constant="8" id="H5U-TP-dyw"/>
+                            <constraint firstItem="uE5-dm-48X" firstAttribute="centerX" secondItem="guN-yH-p6i" secondAttribute="centerX" id="HQR-hi-k6o"/>
+                            <constraint firstAttribute="bottom" secondItem="1vA-Lq-8ca" secondAttribute="bottom" constant="6" id="RQ9-8c-gFS"/>
+                            <constraint firstItem="uE5-dm-48X" firstAttribute="top" secondItem="guN-yH-p6i" secondAttribute="top" constant="8" id="cXE-PZ-Sxr"/>
+                            <constraint firstItem="1vA-Lq-8ca" firstAttribute="leading" secondItem="guN-yH-p6i" secondAttribute="leading" constant="8" id="f5Z-9Z-NCy"/>
+                            <constraint firstAttribute="trailing" secondItem="wlx-5A-sVd" secondAttribute="trailing" constant="8" id="yzt-HQ-weh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="guN-yH-p6i" secondAttribute="trailing" id="CDy-uz-QwL"/>
+                <constraint firstItem="guN-yH-p6i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="V0u-cU-0Q3"/>
+                <constraint firstItem="guN-yH-p6i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hub-Xx-5qU"/>
+                <constraint firstAttribute="bottom" secondItem="guN-yH-p6i" secondAttribute="bottom" id="oNi-wg-SRY"/>
+            </constraints>
+            <size key="customSize" width="101" height="89"/>
+            <connections>
+                <outlet property="datesLabel" destination="1vA-Lq-8ca" id="L1i-uL-cP7"/>
+                <outlet property="nameLabel" destination="wlx-5A-sVd" id="6yQ-US-Bj5"/>
+                <outlet property="photoImageView" destination="uE5-dm-48X" id="gcy-CD-DGH"/>
+            </connections>
+            <point key="canvasLocation" x="176.33587786259542" y="33.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="baseBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="product">
+            <color red="0.93333333333333335" green="0.90196078431372551" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
