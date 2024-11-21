@@ -38,4 +38,11 @@ class MenuViewModel {
             self.categories = data
         }
     }
+    
+    func removeProduct(id: UUID) {
+        CoreDataManager.shared.removeProduct(by: id) { [weak self] _ in
+            guard let self = self else { return }
+            self.fetchData()
+        }
+    }
 }

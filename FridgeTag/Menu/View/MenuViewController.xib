@@ -75,16 +75,8 @@
                 <constraint firstItem="Lg2-Rd-Tba" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="koU-gk-jdr"/>
                 <constraint firstItem="4Kg-Ol-ZcA" firstAttribute="top" secondItem="Lg2-Rd-Tba" secondAttribute="bottom" constant="20" id="o7Y-ap-CCJ"/>
             </constraints>
-            <connections>
-                <outletCollection property="gestureRecognizers" destination="2i3-9M-gZ6" appends="YES" id="bPM-pV-Tzp"/>
-            </connections>
             <point key="canvasLocation" x="46.564885496183201" y="20.422535211267608"/>
         </view>
-        <tapGestureRecognizer id="2i3-9M-gZ6">
-            <connections>
-                <action selector="handleTapGesture:" destination="-1" id="xUT-gs-YJk"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
     <resources>
         <namedColor name="background">

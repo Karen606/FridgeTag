@@ -20,10 +20,17 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         subscribe()
+        if let layout = createLayout() {
+            mainCollectionView.collectionViewLayout = layout
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         viewModel.fetchData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        mainCollectionView.collectionViewLayout.invalidateLayout()
     }
     
     func setupUI() {
@@ -38,22 +45,22 @@ class MenuViewController: UIViewController {
         mainCollectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "ProductCollectionViewCell")
         let nib = UINib(nibName: "HeaderCollectionReusableView", bundle: nil)
         mainCollectionView.register(nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "HeaderView")
-        if let layout = createLayout() {
-            mainCollectionView.collectionViewLayout = layout
-        }
         mainCollectionView.delegate = self
         mainCollectionView.dataSource = self
-        
+        mainCollectionView.allowsMultipleSelection = false
+        mainCollectionView.allowsSelection = true
     }
     
     func createSectionLayout(isEmpty: Bool) -> NSCollectionLayoutSection {
-        let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .absolute(125), heightDimension: .absolute(150)))
+        let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .absolute(125), heightDimension: .estimated(150)))
+        item.edgeSpacing = NSCollectionLayoutEdgeSpacing.init(leading: .fixed(16), top: .fixed(0), trailing: .none, bottom: .none)
         let group = isEmpty
             ? NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(0), heightDimension: .absolute(0)), subitems: [item])
-            : NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(view.frame.width), heightDimension: .absolute(150)), subitems: [item])
+        : NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(view.frame.width), heightDimension: .estimated(150)), subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 30, bottom: 24, trailing: 0)
+        
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 24, trailing: 0)
         if !isEmpty {
             section.boundarySupplementaryItems = [.init(layoutSize: .init(widthDimension: .absolute(view.frame.width), heightDimension: .absolute(60)), elementKind: UICollectionView.elementKindSectionFooter, alignment: .top)]
         }
@@ -97,17 +104,17 @@ class MenuViewController: UIViewController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] categories in
                 guard let self = self else { return }
+                if let layout = createLayout() {
+                    mainCollectionView.collectionViewLayout = layout
+                }
                 self.mainCollectionView.reloadData()
+                
             }
             .store(in: &cancellables)
     }
     
     @objc func clickedAdd() {
         self.pushViewController(ProductFormViewController.self)
-    }
-    
-    @IBAction func handleTapGesture(_ sender: UITapGestureRecognizer) {
-        view.endEditing(true)
     }
 }
 

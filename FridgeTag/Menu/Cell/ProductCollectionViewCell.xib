@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guN-yH-p6i" customClass="ShadowView">
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guN-yH-p6i" customClass="ShadowView">
                         <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-Lq-8ca">
@@ -44,6 +44,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOs-fC-UYd">
+                                <rect key="frame" x="101" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="OyQ-bM-ua7"/>
+                                    <constraint firstAttribute="width" constant="24" id="iUp-Ug-D2d"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="minus"/>
+                                <connections>
+                                    <action selector="clickedRemove:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Ly6-AB-JJn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="product"/>
                         <constraints>
@@ -53,8 +65,10 @@
                             <constraint firstAttribute="trailing" secondItem="1vA-Lq-8ca" secondAttribute="trailing" constant="8" id="H5U-TP-dyw"/>
                             <constraint firstItem="uE5-dm-48X" firstAttribute="centerX" secondItem="guN-yH-p6i" secondAttribute="centerX" id="HQR-hi-k6o"/>
                             <constraint firstAttribute="bottom" secondItem="1vA-Lq-8ca" secondAttribute="bottom" constant="6" id="RQ9-8c-gFS"/>
+                            <constraint firstItem="QOs-fC-UYd" firstAttribute="top" secondItem="guN-yH-p6i" secondAttribute="top" id="WE3-F6-cnn"/>
                             <constraint firstItem="uE5-dm-48X" firstAttribute="top" secondItem="guN-yH-p6i" secondAttribute="top" constant="8" id="cXE-PZ-Sxr"/>
                             <constraint firstItem="1vA-Lq-8ca" firstAttribute="leading" secondItem="guN-yH-p6i" secondAttribute="leading" constant="8" id="f5Z-9Z-NCy"/>
+                            <constraint firstAttribute="trailing" secondItem="QOs-fC-UYd" secondAttribute="trailing" id="sOo-O7-I68"/>
                             <constraint firstAttribute="trailing" secondItem="wlx-5A-sVd" secondAttribute="trailing" constant="8" id="yzt-HQ-weh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -76,11 +90,13 @@
                 <outlet property="datesLabel" destination="1vA-Lq-8ca" id="L1i-uL-cP7"/>
                 <outlet property="nameLabel" destination="wlx-5A-sVd" id="6yQ-US-Bj5"/>
                 <outlet property="photoImageView" destination="uE5-dm-48X" id="gcy-CD-DGH"/>
+                <outlet property="removeButton" destination="QOs-fC-UYd" id="wBN-Vx-MMa"/>
             </connections>
             <point key="canvasLocation" x="176.33587786259542" y="33.098591549295776"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="minus" width="24" height="24"/>
         <namedColor name="baseBlack">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
